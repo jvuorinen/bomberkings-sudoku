@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Bomberking's sudoku</title>
+    <link rel="stylesheet" type="text/css" href="bk_sudoku_style.css">
+<!--     <script src="cordova.js"></script> -->
+    <script src="bk_sudoku_gameboards.js" defer></script>
+    <script src="bk_sudoku_script.js" defer></script>
+
+</head>
+
+
+<body>
+
+<div id="divButtonArea">
+    <div class="divButton">
+        <img id="buttonExit" class="button" src="iconExit.svg" draggable="false" />
+    </div>
+    <div class="divButton">
+        <img id="buttonGridSize" class="button" src="iconGridSize.svg" draggable="false" />
+    </div>
+    <div class="divButton">
+        <img id="buttonNew" class="button" src="iconNew.svg" draggable="false"/>
+    </div>
+    <div class="divButton">
+        <img id="buttonSave" class="button" src="iconSave.svg" draggable="false"/>
+    </div>
+    <div class="divButton">
+        <img id="buttonLoad" class="button" src="iconLoad.svg" draggable="false" />
+    </div>
+    <div class="divButton">
+        <img id="buttonErrors" class="button" src="iconErrors.svg" draggable="false"/>
+    </div>
+</div>
+
+<div id="divGameArea">
+    <table id="sudokuTable" contenteditable="false">
+        <!-- JS program creates the game board here -->
+    </table>
+</div>
+
+</body>
+</html>

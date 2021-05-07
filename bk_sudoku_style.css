@@ -1,0 +1,113 @@
+/* Reset all */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+    user-select:    none;
+    user-drag:      none;
+    cursor:         default;
+}
+
+
+/* General stuff */
+
+@font-face {
+    font-family: bs_font;
+    src: url(font_SSPR.ttf);
+}
+
+body {
+    background: radial-gradient(circle at 13.46% 54.19%, #0f1a52, transparent 100%),radial-gradient(circle at 89.54% 19.05%, #152c38, transparent 100%),radial-gradient(circle at 66.72% 92.53%, #3e344d, transparent 100%),radial-gradient(circle at 50% 50%, #1e5743, #1e5743 100%)
+}
+
+/* Game area */
+
+#divButtonArea {
+    height:             10vh;
+    width:              100vw;
+
+    display:            flex;
+}
+
+.divButton {
+    width:              16.66%;
+    display:            flex;
+
+    justify-content:    center;
+    align-items:        center;
+}
+
+.button {
+    width:              50%;
+    max-height:         80%;
+    opacity:            0.7;
+}
+
+#divGameArea {
+    height:             90vh;
+    width:              100vw;
+
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+}
+
+.button {
+    /*transition:     transform 50ms ease-out;*/
+}
+
+#sudokuTable {
+    height:         90vmin;
+    width:          90vmin;
+
+
+    empty-cells:    show;
+
+    font-family:    bs_font;
+    table-layout:   fixed;
+
+    /*border-spacing: (set in JS) */
+    /*font-size:      (set in JS) */
+}
+
+
+.sdCell {
+    /*height:      (set in JS) */
+    /*width:       (set in JS) */
+
+    /*background:     hsla(217,10%,80%,0.7);*/
+    /*border-radius:  2%;*/
+
+  /*  box-shadow:     0.3vmin 0.3vmin hsla(217,10%,30%,0.4);*/
+    color:          hsla(55,5%,95%,0.7);
+
+
+    white-space:    nowrap;
+    overflow:       hidden;
+    text-align:     center;
+    vertical-align: middle;
+}
+
+.inputCell {
+    color:          hsla(200,10%,70%,0.3);
+    /*transition:     transform 50ms ease-out, box-shadow 100ms;*/
+}
+
+.boxStyle1{
+    background:     hsla(200,15%,35%,0.3);
+    /*box-shadow:     0.3vmin 0.3vmin hsla(200,15%,60%,0.1)*/
+}
+.boxStyle2{
+    background:     hsla(200,15%,50%,0.3);
+    /*box-shadow:     0.3vmin 0.3vmin hsla(200,15%,50%,0.2)*/
+}
+.boxStyle3{
+    background:     hsla(200,15%,80%,0.3);
+    /*box-shadow:     0.3vmin 0.3vmin hsla(200,15%,70%,0.2)*/
+}
+
